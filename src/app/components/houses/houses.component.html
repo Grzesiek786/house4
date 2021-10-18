@@ -1,0 +1,7 @@
+<div *ngIf="elements" class="card-container">
+  <p>Miejscowość: {{ elements.address[0].city }}</p>
+  <p>Adres: {{ elements.address[0].street }} {{ elements.address[0].num }}</p>
+  <p>Powierzchnia: {{ elements.surface }} m2</p>
+  <p>Cena: {{ elements.price }} zł</p>
+  <button>Zarezerwuj</button>
+</div>

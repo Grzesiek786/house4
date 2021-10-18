@@ -1,0 +1,14 @@
+<div class="dashboard-container">
+  <div class="buttons">
+    <button class="btn" (click)="showAllHouses()">Wyświetl wszystkie</button>
+    <button class="btn" (click)="showAbove()">Wyświetl powyżej 900 tyś.</button>
+    <button class="btn" (click)="showBelow()">Wyświetl poniżej 700 tyś.</button>
+  </div>
+  <div class="cards-container" *ngIf="houses">
+    <app-card
+      class="cards"
+      *ngFor="let house of houses"
+      [house]="house"
+    ></app-card>
+  </div>
+</div>

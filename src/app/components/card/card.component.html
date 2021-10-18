@@ -1,0 +1,7 @@
+<div *ngIf="house" class="card-container" [ngClass]="borderClass">
+  <p>Miejscowość: {{ house.address[0].city }}</p>
+  <p>Adres: {{ house.address[0].street }} {{ house.address[0].num }}</p>
+  <p>Powierzchnia: {{ house.surface }} m2</p>
+  <p>Cena: {{ house.price }} zł</p>
+  <button (click)="booking(house.id)">Zarezerwuj</button>
+</div>
